@@ -33,7 +33,7 @@ class PastOrders extends Component{
     pastOrderDetails = this.state.orders.map((order) => {
         // i=i+1;
         console.log("order status",order.userOrder[0].orderStatus)
-        if(order.userOrder[0].orderStatus==="delivered"){
+        if(order.userOrder[0].orderStatus==="delivered" || order.userOrder[0].orderStatus==="cancelled"){
             return (
                 <div className="card">
                 <div className="card-body">
