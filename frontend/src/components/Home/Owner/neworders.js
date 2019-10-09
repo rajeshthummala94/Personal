@@ -58,7 +58,7 @@ class NewOrders extends Component{
             orderStatus: "cancelled"
         }
         console.log("data",data)
-        axios.put(rootUrl+'/manage-orders',data)
+        axios.put(rootUrl+'/orders/manage-orders',data)
             .then(response => {
                 console.log("inside success" )
                 console.log("Status Code : ",response.status);
