@@ -394,7 +394,7 @@ app.post("/additem", (req, res) => {
                           "Content-type": "application/json"
                         });
                         console.log("Item details Inserted");
-                        //res.end(JSON.stringify(result4));
+                        res.end(JSON.stringify(result4));
                       }
                     });
                   }
